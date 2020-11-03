@@ -1,0 +1,38 @@
+#top-order-pizza{
+    position: relative;
+    width: 100%;
+    min-height: 7.84929vw;
+
+    /* background: red; */
+    display: flex;
+    align-items: center;
+}
+
+#top-order-pizza .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.back-page{
+    min-height: 3.92465vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.5s;
+    color: var(--white);
+}
+
+.back-page:hover{
+    transform: scale(1.1);
+}
+
+.back-page span{
+    font-size: 1.25589vw;
+    margin-left: 0.23548vw;
+}

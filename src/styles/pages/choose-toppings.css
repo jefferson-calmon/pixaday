@@ -1,0 +1,120 @@
+#choose-toppings{
+    min-height: 100vh;
+    position: relative;
+
+    background: url('../../images/choose-toppings.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#choose-toppings .shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .95);
+}
+
+#choose-toppings #message{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0, 0, 0, .95);
+    z-index: 100;
+
+    transform: scale(0);
+}
+
+#choose-toppings #message.active{
+    transform: scale(1);
+}
+
+#choose-toppings #message div{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40vw;
+    height: 40vw;
+    padding: 3.92465vw 4.70958vw;
+    
+    background: #fff;
+    box-shadow: 0 0 3.92465vw #4cb94454;
+    z-index: 100;
+    border-radius: 1.56986vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#choose-toppings #message div h1{
+    font-size: 3.92465vw;
+}
+
+#choose-toppings #message div p{
+    margin: 3.13972vw 0 4.70958vw;
+    font-size: 1.41287vw;
+    letter-spacing: 0.03925vw;
+    line-height: 2.19780vw;
+    color: var(--text-dark);
+}
+
+#choose-toppings #message div button{
+    min-width: 15.69859vw;
+    height: 3.92465vw;
+
+    outline: none; 
+    border: none;
+    border-radius: 0.54945vw;
+    background: var(--secundary);
+    color: #fff;
+
+    letter-spacing: 0.03925vw;
+    font-size: 1.41287vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#choose-toppings main{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 3.92465vw 0;
+
+    position: relative;
+    z-index: 1;
+}
+
+#choose-toppings main .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #fff;
+}
+
+#choose-toppings main .content h1{
+    font-size: 3.92465vw;
+}
+
+
+#choose-toppings main .content .grid-toppings-pizza{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3.92465vw;
+    place-items: center;
+    place-content: center;
+
+    min-height: 60vh;
+    width: 100%;
+    margin: 5.49451vw 0;
+}

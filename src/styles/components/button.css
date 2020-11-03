@@ -1,0 +1,17 @@
+.button{
+    display: block;
+    text-decoration: none;
+
+    height: 3.92465vw;
+    min-width: 17.26845vw;
+    padding: 0 1.56986vw;
+    border-radius: 0.23548vw;
+    border: 0.15699vw solid var(--primary);
+
+    line-height: calc(3.92465vw - 0.31397vw);
+    text-align: center;
+    transition: 0.4s;
+
+    font-weight: 500;
+    font-size: 1.41287vw;
+}

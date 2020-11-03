@@ -1,0 +1,139 @@
+#choose-size{
+    min-height: 100vh;
+    position: relative;
+    background: url('../../images/choose-size.jpg') no-repeat center;
+    background-size: cover;
+}
+
+#choose-size .shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+}
+
+#choose-size main{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 3.92465vw 0;
+
+    position: relative;
+    z-index: 1;
+}
+
+#choose-size main .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+#choose-size main .content h1{
+    font-size: 3.92465vw;
+}
+
+#choose-size main .content .grid-sizes-pizza{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.70958vw;
+    place-items: center;
+    place-content: center;
+
+    min-height: 60vh;
+    width: 100%;
+    margin: 5.49451vw 0;
+    /* background: red; */
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza{
+    background: transparent;
+    height: 60vh;
+    width: 100%;
+    border-radius: 1.56986vw;
+    border: 0.23548vw solid var(--gray-light);
+    cursor: pointer;
+    position: relative;
+    padding: 1.56986vw;
+    transition: 0.5s;
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza.active{
+    border: 0.23548vw solid var(--secundary);
+    transform: scale(1.1);
+    box-shadow: 0  0  1.56986vw rgba(77, 186, 69, 0.2);
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza .icon-checked{
+    position: absolute;
+    right: -0.78493vw;
+    top: -0.78493vw;
+    background: #fff;
+    border-radius: 50%;
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza .icon-checked.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza .image-pizza{
+    height: 70%;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.56986vw;
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza .image-pizza img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: none;
+    pointer-events: none;
+    user-select: none;
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza .image-pizza img.small {
+    width: 70%;
+    height: 70%;
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza .image-pizza img.medium {
+    width: 80%;
+    height: 80%;
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza .cost-pizza{
+    min-height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: red; */
+    border-top: 0.07849vw solid var(--gray-light);
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza .cost-pizza h2{
+    font-size: 2.51177vw;
+    opacity: 0.8;
+    margin-bottom: 0.54945vw;
+}
+
+#choose-size main .content .grid-sizes-pizza .box-size-pizza .cost-pizza span{
+    font-size: 2.11931vw;
+    font-weight: 700;
+}

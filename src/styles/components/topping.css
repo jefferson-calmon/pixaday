@@ -1,0 +1,69 @@
+
+#choose-toppings main .content .grid-toppings-pizza .box-topping-pizza{
+    background: #fff;
+    height: 17.26845vw;
+    width: 100%;
+
+    border-radius: 1.56986vw;
+    border: 0.23548vw solid var(--gray-light);
+    cursor: pointer;
+
+    position: relative;
+    padding: 1.56986vw;
+    transition: 0.2s;
+}
+
+#choose-toppings main .content .grid-toppings-pizza .box-topping-pizza.active{
+    border: 0.23548vw solid var(--secundary);
+    transform: scale(1.1);
+    box-shadow: 0  0  1.56986vw rgba(77, 186, 69, 0.2);
+}
+
+#choose-toppings main .content .grid-toppings-pizza .box-topping-pizza .icon-checked{
+    position: absolute;
+    right: -0.78493vw;
+    top: -0.78493vw;
+    background: #fff;
+    border-radius: 50%;
+
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.2s;
+    z-index: 10;
+}
+
+#choose-toppings main .content .grid-toppings-pizza .box-topping-pizza.active .icon-checked{
+    opacity: 1;
+    transform: scale(1);
+}
+
+#choose-toppings main .content .grid-toppings-pizza .box-topping-pizza img.image-topping{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.41287vw;
+}
+
+#choose-toppings main .content .grid-toppings-pizza .box-topping-pizza .shadow-topping{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    border-radius: 1.41287vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#choose-toppings main .content .grid-toppings-pizza .box-topping-pizza .shadow-topping h2{
+    font-size: 1.72684vw;
+}
